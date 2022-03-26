@@ -82,9 +82,9 @@ def health():
     playsurface.blit(hsurf, hrect)
     #pygame.display.flip()
 def heart1():
-    hrt1 = pygame.image.load(r'C:\Gaminator\fullhrt.png')
-    hrt2 = pygame.image.load(r'C:\Gaminator\nohrt.png')
-    hrt3 = pygame.image.load(r'C:\Gaminator\hbhrt.png')
+    hrt1 = pygame.image.load("./fullhrt.png")
+    hrt2 = pygame.image.load("./nohrt.png")
+    hrt3 = pygame.image.load("./hbhrt.png")
     if Health == 10:
         #pygame.draw.circle(playsurface, redcolour, (150,10), 9)
         playsurface.blit(hrt1, (135,1))
@@ -505,7 +505,7 @@ def rungame():
     raspberryspawned = 1
     direction = 'right'
     changedirection = direction
-    hbi = pygame.image.load(r'C:\Gaminator\healthboostimg.png')
+    hbi = pygame.image.load("./healthboostimg.png")
     while True:
         if hb > 20:
             hb = 20
